@@ -1,0 +1,18 @@
+Sudoku Solver Project
+PDS 2022 Final Project - Catherine Lu
+
+This project is a simple sudoku puzzle solver.
+
+The sudoku solver utilizes 3 primary files: the Main class, which runs the solver; the SudokuSolver class, which houses
+the bulk of the logic/the puzzle-solving algorithm, and the GUI, which displays the user interface.
+
+It is also necessary to have separate .txt files that hold the desired sudoku puzzles to be solved. These files serve
+as input for the SudokuSolver class, and there is an option to select these files from the device through the GUI. While
+I've included some sample sudoku boards, it's quite easy to make your own as well. The file is formatted visually like
+a sudoku board would be; it consists of 81 numbers with 9 lines of 9 numbers, all separated by spaces. Each number
+corresponds with the value at a location on the board, and 0 corresponds with an empty space.
+
+Once the main method is run, the interface will pop up with an empty sudoku grid and 3 buttons. Press "Choose File" and
+select one of those .txt files from the device. The grid will then display the starting conditions of that sudoku board.
+Press solve, and the empty spaces will fill with the correct numbers. At any point, pressing restart will empty the
+entire grid, and another file can be chosen. Closing the window terminates the program.
